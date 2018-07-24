@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Misterinvest</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="login.css"> -->
+	<link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
+	<link rel="shortcut icon" type="image/png" href="asset/logo.png">
+	<script src="https://code.jquery.com/jquery-3.3.1.js""></script>
+
+</head>
+<body>
+<header>
+	<div id="header-inner">
+		<a href="index.html" id="logo"><p>Misterinvest</p></a>
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a class="register1" href="login.html#form-register">Kerja sama</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Hubungi kami</a></li>
+				<li id="login"><a id="a" class="login1" href="login.html#login-form">Login</a></li>
+			</ul>
+		</nav>			
+	</div>
+</header>
+<!-- End Header -->
+	<div class="container-login">
+		<div class="container-inner">
+			<div class="form-login">
+				<div class="login">Login</div>
+				<div class="register">Register</div>
+				<div id="login-form">
+					<div class="login-form-logo">
+						<div>
+							<img src="asset/logo4.png">
+						</div>
+						<div>
+							<h3>Misterinvest</h3>
+						</div>
+					</div>
+					<label>Email/Nama Pengguna</label><br>
+						<input type="text" name="" class="input"><br>
+					<label>Password</label><br>
+					<input type="Password" name="" class="input"><br>
+					<div class="btn">Login</div>
+					<p><a href="">Lupa password ?</a></p>
+				</div>
+				<div id="form-register">
+					<div class="form-register-cont">
+						<div class="set">Nama Depan<span id="star">*</span><br>
+							<input type="text" name="" class="input"><br></div>
+						<div class="set">Nama Belakang<span id="star">*</span><br>			
+							<input type="text" name="" class="input"><br></div>
+						<div class="tiga">Email<span id="star">*</span><br>
+							<input type="email" name="" class="input"><br></div>
+						<div class="set">Password<span id="star">*</span><br>
+							<input type="password" name="" class="input"><br></div>
+						<div class="set">Confrim Password<span id="star">*</span><br>
+							<input type="Password" name="" class="input"><br></div>
+						<div class="set">Phone<span id="star">*</span><br>
+							<input type="text" name="" class="input"><br></div>
+						<div class="full">Alamat<span id="star">*</span><br>
+							<input type="text" name="" class="input full-input"><br></div>
+						<div id="lk">
+							<input type="radio" name="jk"><span>Laki-laki</span>
+						</div>
+						<div id="wa">
+							<input type="radio" name="jk"><span>Wanita</span>
+						</div>
+						<div class="btn">Register</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-inner">
+			<div class="foot-cont" id="mis">
+				<img id="logo2" src="asset/logo4.png">
+				<div id="pli">
+					<p>@ 2018, Misterinvest</p>
+					<p id="datanest">Powered by <img src="asset/datanest1.png"></p>
+				</div>
+			</div>
+			<div class="foot-cont">
+				<ul id="social">
+					<li><i class="fab fa-twitter"></i></li>
+					<li><i class="fab fa-facebook"></i></li>
+					<li><i class="fab fa-youtube"></i></li>
+					<li><i class="fab fa-instagram"></i></li>
+				</ul>
+			</div>
+			<div class="foot-cont">	
+				<ul id="link">
+					<li><a href="">Syarat dan ketentuan</a></li>
+					<li><a href="">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+<!-- End footer -->
+	<script>
+		$(document).ready(function(){
+			$("#login-form").hide();
+			// $(".login").css("background","none");
+
+			$(".login").click(function(){
+				$("#login-form").show();
+				$("#form-register").hide();
+				// $(".register").css(".login:focus","color: #2c6076");
+				// $(".login").css(".login:active","color:#2c6076");
+			});
+
+			$(".register").click(function(){
+				$("#form-register").show();
+				$("#login-form").hide();
+				// $(".login").css("background","none");	
+				// $(".register").css("background","#fff");
+
+			});
+
+			$(".login1").click(function(){
+				$("#login-form").show();
+				$("#form-register").hide();
+				// $(".register").css(".login:focus","color: #2c6076");
+				// $(".login").css(".login:active","color:#2c6076");
+			});
+
+			$(".register1").click(function(){
+				$("#form-register").show();
+				$("#login-form").hide();
+				// $(".login").css("background","none");	
+				// $(".register").css("background","#fff");
+
+			});
+
+			
+		});
+	</script>
+</body>
+</html>

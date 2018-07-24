@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hide</title>
+	<style type="text/css">
+		#kotak{
+			background-color: red;
+			min-height: 100px;
+		}
+	</style>
+	<script type="text/javascript">
+	function proses(){
+		var nilaiTombol = document.getElementById('kotak').value;
+		if(nilaiTombol == "hide"){
+			document.getElementById('kotak').style.display = 'none';
+			document.getElementById('tombol').value="show";
+		}
+		else{
+			document.getElementById('tombol').value	= "hide";
+			document.getElementById('kotak').style.display= "block";
+		}
+	}
+</script>
+</head>
+
+<body>
+	<div id="kotak">
+		<p>isi kotak</p>
+	</div>
+	<input type="button" name="hide" value="hide" onclick="proses()">
+</body>
+</html>

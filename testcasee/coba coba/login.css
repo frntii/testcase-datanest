@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+body{
+	background: #f2f2f2;
+}
+p{
+	text-align: center;
+	padding: 4% 0;
+}
+a{
+	color: #2c6076;
+	text-decoration: none;
+}
+#star{color: red}
+.container{
+	width: 450px;
+	margin: 70px auto;
+}
+.register, .login{
+	width: 50%;
+	background: #ffffff;
+	height: 60px;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+	color: #747474;
+}
+#login-form,
+#form-register{
+	background: #fff;
+	box-sizing: border-box;
+	padding: 40px;
+	clear: both;
+	width: 100%;
+	color: #747474;
+	height: auto;
+}
+.input{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	margin-bottom: 25px;
+	border: 2px solid #e9eaea;
+}
+.btn{
+	width: 100%;
+	background: #2c6076;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	color: #ffffff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+input[type="radio"]:checked+span{
+	color: #2c6076;
+}
+input[type="radio"]{
+	display: none;
+}
+#lk input[type="radio"]+span:before{
+	content: "";
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 2px;
+	background: url(asset/laki-laki.png) no-repeat center bottom;
+	background-size: 100px 100px; 
+}
+#wa input[type="radio"]+span:before{
+	content: "";
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 2px;
+	background: url(asset/wanita.png) no-repeat center bottom;
+	background-size: 100px 100px; 
